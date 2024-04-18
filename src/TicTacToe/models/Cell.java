@@ -15,6 +15,15 @@ public class Cell {
 
     }
 
+    public void printCell(){
+        if(player==null){
+            System.out.print("| -- |");
+        }
+        else{
+            System.out.print("| "+player.getSymbol().getaChar()+" |");
+        }
+    }
+
     public int getRow() {
         return row;
     }

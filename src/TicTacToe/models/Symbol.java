@@ -2,17 +2,17 @@ package TicTacToe.models;
 
 public class Symbol {
 
-    private char symbol;
+    private char aChar;
 
-    public Symbol(char symbol) {
-        this.symbol = symbol;
+    public Symbol(char aChar) {
+        this.aChar = aChar;
     }
 
-    public char getSymbol() {
-        return symbol;
+    public char getaChar() {
+        return aChar;
     }
 
-    public void setSymbol(char symbol) {
-        this.symbol = symbol;
+    public void setaChar(char symbol) {
+        this.aChar = aChar;
     }
 }
