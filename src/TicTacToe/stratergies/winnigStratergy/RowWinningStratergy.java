@@ -21,11 +21,13 @@ public class RowWinningStratergy implements WinningStratergy{
             rowMaps.put(row,new HashMap<>());
         }
 
-        if(!rowMaps.get(row).containsValue(playerChar)){
+        if(!rowMaps.get(row).containsKey(playerChar)){
             rowMaps.get(row).put(playerChar,0);
         }
 
         rowMaps.get(row).put(playerChar,rowMaps.get(row).get(playerChar)+1);
+
+       
 
        return rowMaps.get(row).get(playerChar).equals(board.getDimension());
 

@@ -6,10 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="678c4724-f163-439e-bd6c-74fa232ebe35" name="Changes" comment="tictactoe_1st">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Factory/BotPlayingStratergyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Factory/BotPlayingStratergyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/controllers/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/BotPlayingStratergies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/BotPlayingStratergies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/EasyBotPlayingStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/EasyBotPlayingStratergy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/HardBotPlayingStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/HardBotPlayingStratergy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/MediumBotPlayingStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/botPlayingStratergies/MediumBotPlayingStratergy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/ColWinningStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/ColWinningStratergy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/DigonalWinningStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/DigonalWinningStratergy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/RowWinningStratergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/stratergies/winnigStratergy/RowWinningStratergy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TicTacToeMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/briansam/Desktop/Projects/LLD_PROJECTS/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TicTacToeMain.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/briansam/Desktop/Projects/LLD_PROJECTS/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TicTacToeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TicTacToe.TicTacToeMain" />
@@ -132,11 +142,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TicTacToe/TicTacToeMain.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

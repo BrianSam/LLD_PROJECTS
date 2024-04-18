@@ -19,11 +19,13 @@ public class ColWinningStratergy implements WinningStratergy{
         if(!colMap.containsKey(col)){
             colMap.put(col,new HashMap<>());
         }
-        if(!colMap.get(col).containsValue(playerChar)){
+        if(!colMap.get(col).containsKey(playerChar)){
             colMap.get(col).put(playerChar,0);
         }
 
-        colMap.get(col).put(playerChar,colMap.get(col).get(playerChar)+1);
+        colMap.get(col).put(playerChar,(colMap.get(col).get(playerChar))+1);
+
+
 
         return colMap.get(col).get(playerChar).equals(board.getDimension());
 

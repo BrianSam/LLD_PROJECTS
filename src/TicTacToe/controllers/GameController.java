@@ -14,10 +14,15 @@ public class GameController {
     }
 
     public void makeMove(Game game){
+        game.makeMove();
 
     }
     public GameState GameState(Game game){
         return game.getGameState();
+    }
+
+    public void Undo(Game game){
+
     }
 
     public Player getWinner(Game game){

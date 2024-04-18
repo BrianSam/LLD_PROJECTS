@@ -13,6 +13,9 @@ public class Bot extends Player{
         this.botDifficultyLevel = botDifficultyLevel;
         this.botPlayingStratergies = BotPlayingStratergyFactory.getBotplayingStratergy(botDifficultyLevel);
     }
+    public Move makeMove(Board board){
+        return  botPlayingStratergies.makeMove(board);
+    }
 
     public BotDifficultyLevel getBotDifficultyLevel() {
         return botDifficultyLevel;

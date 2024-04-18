@@ -2,7 +2,7 @@ package TicTacToe.models;
 
 public class Symbol {
 
-    private char aChar;
+    private Character aChar;
 
     public Symbol(char aChar) {
         this.aChar = aChar;
@@ -12,7 +12,7 @@ public class Symbol {
         return aChar;
     }
 
-    public void setaChar(char symbol) {
+    public void setaChar(Character aChar) {
         this.aChar = aChar;
     }
 }

@@ -35,10 +35,17 @@ public class DigonalWinningStratergy implements WinningStratergy{
 
         }
 
-        if(leftDiagonal.containsKey(playerChar)||rightDiagonal.containsKey(playerChar)){
-            return (rightDiagonal.get(playerChar).equals(board.getDimension())||leftDiagonal.get(playerChar).equals(board.getDimension()));
+       if(rightDiagonal.containsKey(playerChar)) {
+           if(rightDiagonal.get(playerChar).equals(board.getDimension())){
+               return true;
+           }
 
-        }
+       }
+       if(leftDiagonal.containsKey(playerChar)){
+           if (leftDiagonal.get(playerChar).equals(board.getDimension())){
+               return true;
+           }
+       }
         return false;
 
     }

@@ -9,14 +9,18 @@ import TicTacToe.stratergies.winnigStratergy.WinningStratergy;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TicTacToeMain {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
         int dimension=3;
         List<Player>players = new ArrayList<>();
         players.add(new Player(new Symbol('X'),"Brian", PlayerType.HUMAN));
-        players.add(new Bot(new Symbol('O'),"BOT",PlayerType.BOT, BotDifficultyLevel.EASY));
+        players.add(new Bot(new Symbol('O'),"MINI",PlayerType.BOT,BotDifficultyLevel.EASY));
+
 
         List<WinningStratergy>winningStratergies = List.of(new RowWinningStratergy()
                 ,new DigonalWinningStratergy()
@@ -25,16 +29,24 @@ public class TicTacToeMain {
         GameController gameController = new GameController();
         Game game = gameController.startGame(dimension,players,winningStratergies);
 
-        gameController.printBoard(game);
+
 
         while (gameController.GameState(game).equals(GameState.IN_PROGRESS)){
             gameController.printBoard(game);
+            System.out.println("Do u want to undo ? y/n :- ");
+            String undo = scanner.next();
+
+            if(undo.equalsIgnoreCase("y")){
+                gameController.Undo(game);
+                continue;
+            }
+
             gameController.makeMove(game);
 
         }
 
 
-        System.out.println("DEBUG");
+
 
     }
 
