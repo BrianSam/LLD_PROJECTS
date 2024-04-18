@@ -8,4 +8,5 @@ import TicTacToe.models.Player;
 public interface WinningStratergy {
 
     boolean checkWinner(Board board, Move move);
+    void removeMove(Move move);
 }

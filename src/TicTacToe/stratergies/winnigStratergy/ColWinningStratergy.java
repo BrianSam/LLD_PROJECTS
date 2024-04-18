@@ -1,9 +1,11 @@
 package TicTacToe.stratergies.winnigStratergy;
 
 import TicTacToe.models.Board;
+import TicTacToe.models.Cell;
 import TicTacToe.models.Move;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ColWinningStratergy implements WinningStratergy{
@@ -28,6 +30,18 @@ public class ColWinningStratergy implements WinningStratergy{
 
 
         return colMap.get(col).get(playerChar).equals(board.getDimension());
+
+
+    }
+
+    @Override
+    public void removeMove(Move move) {
+       Character player = move.getPlayer().getSymbol().getaChar();
+       Integer col = move.getCell().getCol();
+
+       if(colMap.get(col).get(player).intValue()>0){
+           colMap.get(col).put(player,colMap.get(col).get(player)-1);
+       }
 
 
     }

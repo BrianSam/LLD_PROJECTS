@@ -19,7 +19,9 @@ public class TicTacToeMain {
         int dimension=3;
         List<Player>players = new ArrayList<>();
         players.add(new Player(new Symbol('X'),"Brian", PlayerType.HUMAN));
-        players.add(new Bot(new Symbol('O'),"MINI",PlayerType.BOT,BotDifficultyLevel.EASY));
+        players.add(new Bot(new Symbol('O'),"BOT",PlayerType.BOT,BotDifficultyLevel.EASY));
+
+
 
 
         List<WinningStratergy>winningStratergies = List.of(new RowWinningStratergy()
@@ -32,14 +34,9 @@ public class TicTacToeMain {
 
 
         while (gameController.GameState(game).equals(GameState.IN_PROGRESS)){
-            gameController.printBoard(game);
-            System.out.println("Do u want to undo ? y/n :- ");
-            String undo = scanner.next();
 
-            if(undo.equalsIgnoreCase("y")){
-                gameController.Undo(game);
-                continue;
-            }
+            gameController.printBoard(game);
+
 
             gameController.makeMove(game);
 

@@ -13,6 +13,8 @@ public class Game {
     private GameState gameState;
     private int nextMovePlayerIndex;
 
+    private static Scanner scanner = new Scanner(System.in);
+
     private List<WinningStratergy> winningStratergies;
 
     public static Builder GetBuilder(){
@@ -118,6 +120,20 @@ public class Game {
         return false;
     }
 
+    private void removeFromWin(Move move){
+        for (WinningStratergy winningStratergy:winningStratergies){
+            winningStratergy.removeMove(move);
+
+        }
+    }
+    private void removeFromBoard(Move move){
+        Integer row = move.getCell().getRow();
+        Integer col = move.getCell().getCol();
+        Cell emptyCell = new Cell(row,col);
+        board.getBoard().get(row).set(col,emptyCell);
+
+    }
+
     public void makeMove(){
         Player currPlayer = players.get(nextMovePlayerIndex);
         System.out.println("this is "+currPlayer.getName()+"'s move:- ");
@@ -140,10 +156,31 @@ public class Game {
             winner=currPlayer;
             gameState=GameState.ENDED;
             System.out.println("Game Ended. Winner = "+winner.getName());
+            board.printBoard();
 
         } else if (moves.size()== board.getDimension() * board.getDimension()) {
             gameState = GameState.DRAW;
             System.out.println("Game Ended. Winner = Draw ");
+            board.printBoard();
+        }
+        else {
+            if(currPlayer.getPlayerType().equals(PlayerType.HUMAN)){
+                System.out.println("Do u want to undo ? y/n :- ");
+                String undo = scanner.next();
+
+                if(undo.equalsIgnoreCase("y")){
+                    removeFromWin(finalMove);
+                    removeFromBoard(finalMove);
+                     moves.removeLast();
+
+
+                     Integer idx = nextMovePlayerIndex -1;
+                     nextMovePlayerIndex = idx%players.size();
+
+
+
+                }
+            }
         }
     }
 

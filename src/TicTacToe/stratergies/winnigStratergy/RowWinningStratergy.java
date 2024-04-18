@@ -27,7 +27,7 @@ public class RowWinningStratergy implements WinningStratergy{
 
         rowMaps.get(row).put(playerChar,rowMaps.get(row).get(playerChar)+1);
 
-       
+
 
        return rowMaps.get(row).get(playerChar).equals(board.getDimension());
 
@@ -35,5 +35,15 @@ public class RowWinningStratergy implements WinningStratergy{
 
 
 
+    }
+
+    @Override
+    public void removeMove(Move move) {
+        Character player = move.getPlayer().getSymbol().getaChar();
+        Integer row = move.getCell().getRow();
+
+        if(rowMaps.get(row).get(player).intValue()>0){
+            rowMaps.get(row).put(player,rowMaps.get(row).get(player)-1);
+        }
     }
 }

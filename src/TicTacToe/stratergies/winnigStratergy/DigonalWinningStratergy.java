@@ -49,4 +49,23 @@ public class DigonalWinningStratergy implements WinningStratergy{
         return false;
 
     }
+
+    @Override
+    public void removeMove(Move move) {
+        Character player = move.getPlayer().getSymbol().getaChar();
+
+
+        if(rightDiagonal.containsKey(player)){
+            if(rightDiagonal.get(player).intValue()>0){
+                rightDiagonal.put(player,rightDiagonal.get(player)-1);
+
+            }
+        }
+        if(leftDiagonal.containsKey(player)){
+            if(leftDiagonal.get(player).intValue()>0){
+                leftDiagonal.put(player,leftDiagonal.get(player)-1);
+
+            }
+        }
+    }
 }
