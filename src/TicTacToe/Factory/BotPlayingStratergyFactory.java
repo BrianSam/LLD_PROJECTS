@@ -10,7 +10,11 @@ public class BotPlayingStratergyFactory {
     public static BotPlayingStratergies getBotplayingStratergy(BotDifficultyLevel botDifficultyLevel){
         if(botDifficultyLevel.equals(botDifficultyLevel.EASY)){
             return new EasyBotPlayingStratergy();
+<<<<<<< HEAD
         } else if (botDifficultyLevel.equals(botDifficultyLevel.MEDIUM)) {
+=======
+        } else if (BotDifficultyLevel.equals(botDifficultyLevel.MEDIUM)) {
+>>>>>>> LLD_PROJECTS/main
             return new MediumBotPlayingStratergy();
 
         }

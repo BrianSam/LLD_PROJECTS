@@ -22,6 +22,7 @@ public class Board {
 
     }
 
+<<<<<<< HEAD
     public void printBoard(){
         for(List<Cell>row:board){
             for (Cell cell :row){
@@ -32,6 +33,8 @@ public class Board {
 
     }
 
+=======
+>>>>>>> LLD_PROJECTS/main
     public int getDimension() {
         return dimension;
     }
