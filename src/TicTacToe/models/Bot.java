@@ -7,11 +7,7 @@ public class Bot extends Player{
     private BotDifficultyLevel botDifficultyLevel;
     private BotPlayingStratergies botPlayingStratergies;
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> LLD_PROJECTS/main
     public Bot(Symbol symbol, String name, PlayerType playerType, BotDifficultyLevel botDifficultyLevel) {
         super(symbol, name, playerType);
         this.botDifficultyLevel = botDifficultyLevel;

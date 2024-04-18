@@ -94,8 +94,9 @@ public class Game {
 
     public Move makeMove(){
         //todo
-        board.printBoard();
-        Scanner scanner = new Scanner(System.in);
+//        board.printBoard();
+//        Scanner scanner = new Scanner(System.in);
+        return null;
 
     }
 
