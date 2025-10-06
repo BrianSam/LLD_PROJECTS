@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="678c4724-f163-439e-bd6c-74fa232ebe35" name="Changes" comment="tictactoe_1st">
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/BillStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Gate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/GateStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/GateType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingFloor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingFloorStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingLotStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingSpotStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/PaymentMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/ParkingLotApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/Stratergies/NearestSpotAssingmentStratergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/Stratergies/ParkingSpotAssingmentStratergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/controllers/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/dtos/TicketDtos/IssueTicketRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/dtos/TicketDtos/IssueTicketResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/exceptions/GateNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/factories/ParkingSpotAssingmentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingSpotStratergyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ResponseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/repositories/GateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/repositories/VehicleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/services/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/models/Gate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/models/Gate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/models/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -119,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713272829769</updated>
-      <workItem from="1757507926247" duration="30739000" />
+      <workItem from="1757507926247" duration="45316000" />
     </task>
     <task id="LOCAL-00001" summary="tictactoe_1st">
       <option name="closed" value="true" />
