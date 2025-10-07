@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="678c4724-f163-439e-bd6c-74fa232ebe35" name="Changes" comment="tictactoe_1st">
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/ParkingLotApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/Stratergies/NearestSpotAssingmentStratergy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/Stratergies/ParkingSpotAssingmentStratergy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/controllers/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/dtos/TicketDtos/IssueTicketRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/dtos/TicketDtos/IssueTicketResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/exceptions/GateNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/factories/ParkingSpotAssingmentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ParkingSpotStratergyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/models/ResponseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/repositories/GateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/repositories/VehicleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/services/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/models/Gate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/models/Gate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/models/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713272829769</updated>
-      <workItem from="1757507926247" duration="45316000" />
+      <workItem from="1757507926247" duration="46907000" />
     </task>
     <task id="LOCAL-00001" summary="tictactoe_1st">
       <option name="closed" value="true" />
